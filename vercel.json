@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "api/index.go": {
+      "includeFiles": "static/"
+    }
+  },
+  "build": {
+    "env": {
+      "GO_BUILD_FLAGS": "-ldflags '-s -w'"
+    }
+  },
+  "rewrites": [{ "source": "/:path*", "destination": "/api/" }]
+}
